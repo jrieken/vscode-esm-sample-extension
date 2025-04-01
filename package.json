@@ -1,0 +1,36 @@
+{
+  "name": "dummy-esm2",
+  "displayName": "dummy-esm2",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "type": "module",
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dummy-esm2.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node ./test/runTest.mjs"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.98.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3",
+    "@vscode/test-electron": "^2.2.0"
+  }
+}
