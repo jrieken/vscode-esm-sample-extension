@@ -3,6 +3,7 @@
   "displayName": "dummy-esm2",
   "description": "",
   "version": "0.0.1",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.100.0"
   },
