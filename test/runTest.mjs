@@ -1,4 +1,3 @@
-import { resolve } from 'path';
 
 import * as module from 'node:module';
 import { fileURLToPath } from 'node:url';
@@ -17,7 +16,11 @@ async function main() {
 		const extensionTestsPath = fileURLToPath(new URL('./suite/index.js', import.meta.url));
 
 		// Download VS Code, unzip it and run the integration test
-		await runTests({ extensionDevelopmentPath, extensionTestsPath });
+		await runTests({
+			version: 'insiders',
+			extensionDevelopmentPath,
+			extensionTestsPath
+		});
 	} catch (err) {
 		console.error('Failed to run tests');
 		process.exit(1);
